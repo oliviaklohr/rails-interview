@@ -26,3 +26,17 @@ A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is 
 
 *   Allow adding a query parameter to the API request to select only Questions that contain the query term(s).
 *   Add a piece of middleware to throttle API requests on a per-Tenant basis. If the Tenant exceeds a rate of 1 request every 2 seconds throttle the response to add a 5 second delay for 30 seconds.
+
+## Setup
+
+`cd ~/your code dir`
+
+`git clone git@github.com:KaleoSoftware/rails-interview-project.git`
+
+`bundle install`
+
+`bundle exec rake db:setup`
+
+To make sure its all working,
+
+` rails s`
