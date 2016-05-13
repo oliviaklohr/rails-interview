@@ -42,3 +42,5 @@ To make sure it's all working,
 You should see this same information.
 
 ## Submitting your project
+
+Provide us the URL to your Github fork and we'll clone it to evaluate it.  Expect to discuss your design decisions during the interview.
