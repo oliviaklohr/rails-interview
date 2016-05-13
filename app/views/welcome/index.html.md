@@ -31,7 +31,7 @@ A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is 
 
 `cd ~/your code dir`
 
-`git clone git@github.com:KaleoSoftware/rails-interview-project.git`
+`git clone git@github.com:KaleoSoftware/rails-interview-project.git .`
 
 `bundle install`
 
@@ -39,4 +39,6 @@ A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is 
 
 To make sure its all working,
 
-` rails s`
+`rails s`
+
+You should see this same information.
