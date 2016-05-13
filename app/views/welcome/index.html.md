@@ -11,7 +11,7 @@ This Rails application is a basic skeleton of an app that serves an API about qu
 
 A Question can have one or more answers, and can be private. Every Answer belongs to one question. Each Question has an asker (User), and each Answer has an answerer (User).
 
-A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is included to preload the database with test data.
+A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is included to preload the database with test data when you setup the DB.
 
 ## You need to accomplish the following tasks:
 
@@ -24,21 +24,21 @@ A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is 
 
 ## Extra credit features you might consider:
 
-*   Allow adding a query parameter to the API request to select only Questions that contain the query term(s).
-*   Add a piece of middleware to throttle API requests on a per-Tenant basis. If the Tenant exceeds a rate of 1 request every 2 seconds throttle the response to add a 5 second delay for 30 seconds.
+*   Allow adding a query parameter to the API request to select only Questions that contain the query term(s).  Return an appropriate HTML status code if no results are found.
+*   Add a piece of middleware to throttle API requests on a per-Tenant basis. After the first 100 requests per day, throttle to 1 request per 10 seconds.
 
-## Setup
+## Project Setup
 
-`cd ~/your code dir`
-
-`git clone git@github.com:KaleoSoftware/rails-interview-project.git .`
+Fork this repo to your own Github account, clone it locally, and from the top-level directory run:
 
 `bundle install`
 
 `bundle exec rake db:setup`
 
-To make sure its all working,
+To make sure it's all working,
 
 `rails s`
 
 You should see this same information.
+
+## Submitting your project
