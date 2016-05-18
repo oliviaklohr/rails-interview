@@ -15,8 +15,8 @@ A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is 
 
 ## You need to accomplish the following tasks:
 
-*   Add a RESTful, read-only API to allow consumers to retrieve Questions and Answers as JSON. The response should nest Answers inside their Question and include the id and name of the Question asker and Answer provider.
-*   Don't return private Answers in the API response.
+*   Add a RESTful, read-only API to allow consumers to retrieve Questions with Answers as JSON (no need to retrieve Answers on their own). The response should include Answers inside their Question as well as include the id and name of the Question and Answer users.
+*   Don't return private Questions in the API response.
 *   Require every API request to include a valid Tenant API key, and return an HTTP code of your choice if the request does not include a valid key.
 *   Track API request counts per Tenant.
 *   Add an HTML dashboard page as the root URL that shows the total number of Users, Questions, and Answers in the system, as well as Tenant API request counts for all Tenants.  Style it enough to not assault a viewer's sensibilities.
