@@ -30,7 +30,7 @@ A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is 
 
 ## Project Setup
 
-Fork this repo to your own Github account, clone it locally, and from the top-level directory run:
+Clone this repo locally, and from the top-level directory run:
 
 `bundle install`
 
@@ -44,4 +44,4 @@ You should see this same information.
 
 ## Submitting your project
 
-Provide us the URL to your Github fork and we'll clone it to evaluate it.  Expect to discuss your design decisions during the interview.
+Send us a zip file of the whole project for us to evaluate it.  If you need to add any additional instructions to the README please put them at the very top of that file and mention.  Expect to discuss your design decisions during the interview.
