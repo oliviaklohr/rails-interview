@@ -1,0 +1,13 @@
+.tenantRequestCount {
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-radius);
+  background-color: #fafafa;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px 25%;
+}
+
+.field {
+  font-size: 25px;
+}

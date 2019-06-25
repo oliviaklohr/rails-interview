@@ -1,3 +1,14 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+:root {
+  --card-shadow: 5px 5px 12px 5px rgb(158, 158, 158);
+  --card-radius: 5px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}

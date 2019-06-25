@@ -1,0 +1,31 @@
+.countCard {
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: var(--card-radius);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--card-shadow);
+  height: 300px;
+  padding-top: 30px;
+  width: 225px;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.title {
+  display: block;
+  font-size: 25px;
+}
+
+.count {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: 75px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}

@@ -1,3 +1,31 @@
+# Ledford Interview Instructions
+
+## Project Setup
+
+This project uses React.js as its front-end. To set up, please run
+
+`bundle install`
+
+`yarn`
+
+`bundle exec rake db:setup`
+
+To make sure it's all working,
+
+`rails s`
+
+You should see the dashboard at your `localhost` port, and if you navigate to `localhost:PORT/questions`, you should be hitting the API.
+
+## Testing
+
+Tests can be run with the `rspec` command, and lint can be checked with the `rubocop` command.
+
+## API Token
+To use the API token for this project, you'll need to grab a token from the database, and add it to your headers. The header should have the key `Authorization` and the value `Token token="token-value"`. I personally use [ModHeader](https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj?hl=en) to do this with ease in the browser.
+
+## Filtering
+Questions can be filtered using the key `title` and the value that you'd like to filter by.
+
 # Kaleo Rails Engineer Candidate Interview Project
 
 Thanks for taking the time to complete this exercise. We're excited that you're considering joining our amazing team.

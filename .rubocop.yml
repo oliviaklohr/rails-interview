@@ -1,0 +1,106 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - bin/**/*
+    - contrib/**/*
+    - config/**/*
+    - db/**/*
+    - tmp/**/*
+    - Capfile
+    - Gemfile
+    - Rakefile
+    - /node_modules
+
+Style/ExpandPathArguments:
+  Enabled: false
+
+# Nested module syntax is fine, just be careful with
+# scoping, i.e. on include
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# Old ruby style syntax may still be needed
+Style/HashSyntax:
+  Enabled: true
+
+Style/EmptyMethod:
+  Enabled: false
+
+# Never break line due to length, except in data
+# vim: set wrap
+Metrics/LineLength:
+  Max: 1024
+
+# Rails controllers and such
+Metrics/MethodLength:
+  Max: 20
+
+# Use and/or for flow control, but not in boolean assignments
+# http://devblog.avdi.org/2010/08/02/using-and-and-or-in-ruby/
+Style/AndOr:
+  Enabled: false
+
+# Use not with .select and flow control
+Style/Not:
+  Enabled: false
+
+# Use { only for single line blocks, but allow block content on its own line to keep line length short
+# each { |l|
+#   l.apply_long_method_name
+# }
+Style/BlockDelimiters:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+# Do not use lambda
+Style/Lambda:
+  Enabled: false
+
+# Allow TODO instead of requiring TODO:
+Style/CommentAnnotation:
+  Enabled: false
+
+# Do not write 1234 as 1_234
+Style/NumericLiterals:
+  Enabled: false
+
+# Relax for controllers with multiple formats
+Metrics/AbcSize:
+  Max: 40
+
+Metrics/BlockLength:
+  Enabled: false
+
+# Too spammy
+Style/Documentation:
+  Enabled: false
+
+# Will probably be default in ruby 3
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Use raise if you expect to catch the expception
+Style/SignalException:
+  Enabled: false
+
+# False positive for if var = value
+Lint/AssignmentInCondition:
+  Enabled: false
+
+# Too much manual horizontal alignment
+Layout/AlignHash:
+  Enabled: false
+
+Layout/AlignArray:
+  Enabled: false
+
+# Vim prefers fixed indent, avoid manual vertical alignment
+Layout/AlignParameters:
+  Enabled: true
+  EnforcedStyle: with_fixed_indentation
+
+# Load order is important
+Bundler/OrderedGems:
+  Enabled: false
